@@ -11,7 +11,8 @@ public class Publisher {
     private Long id;
     private String name;
     private String address;
-    // private List<Book> books;
+
+    public Publisher() {}
 
     public Publisher(String name) {
         this.name = name;
@@ -46,14 +47,6 @@ public class Publisher {
         this.address = address;
     }
 
-    // public List<Book> getBooks() {
-    //     return books;
-    // }
-    //
-    // public void setBooks(List<Book> books) {
-    //     this.books = books;
-    // }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -75,7 +68,6 @@ public class Publisher {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                // ", books=" + books +
                 '}';
     }
 }
